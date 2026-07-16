@@ -152,7 +152,7 @@ export const faqData = {
     },
     {
       id: 'leather-2',
-      question: "Can I get samples of leathers sent out?",
+      question: "Can I get samples of leathers sent outt?",
       answer: 'Yes, we can send you leather samples to help you decide. Please contact us to request samples of specific leathers you\'re interested in.'
     },
     {
