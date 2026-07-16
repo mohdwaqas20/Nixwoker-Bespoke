@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Sitemaps
+Sitemap: https://nixwokerbespoke.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
