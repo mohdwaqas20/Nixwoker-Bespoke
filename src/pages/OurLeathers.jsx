@@ -56,14 +56,21 @@ export default function OurLeathers() {
           <h1 className="text-5xl md:text-5xl font-extrabold uppercase tracking-widest text-white mb-4">
             Our Leathers
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-4 font-light">
-            Wondering what leathers we use to make our world-famous leather jackets?
-          </p>
-          <p className="text-base md:text-lg text-white/80 font-light">
-            Scroll down to read all about Nixwoker's high-quality leathers.
-          </p>
         </div>
       </section>
+
+      {/* ===== BREADCRUMB NAVIGATION ===== */}
+      <div className="bg-primary-white border-b border-gray-200 px-4 md:px-8 py-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center space-x-2 text-sm md:text-base">
+            <a href="/" className="text-primary-black hover:text-black transition-colors font-medium">
+              Home
+            </a>
+            <span className="text-gray-400">/</span>
+            <span className="text-primary-black font-semibold">Our Leathers</span>
+          </div>
+        </div>
+      </div>
 
       {/* Leathers Accordion Section */}
       <section className="py-8 md:py-12 px-4 md:px-8 bg-gray-50">

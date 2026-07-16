@@ -44,7 +44,7 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="bg-primary-black h-[110px] md:h-[180px] flex items-center justify-center">
         <div className="text-center px-4">
-          <h1 className="text-2xl md:text-4xl font-extrabold uppercase tracking-wider text-white">
+          <h1 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wider text-white">
             Contact US
           </h1>
         </div>
@@ -54,7 +54,7 @@ export default function Contact() {
       <div className="bg-primary-white border-b border-gray-200 px-4 md:px-8 py-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center space-x-2 text-sm md:text-base">
-            <a href="/" className="text-primary-black hover:text-leather-brown transition-colors font-medium">
+            <a href="/" className="text-primary-black hover:text-black transition-colors font-medium">
               Home
             </a>
             <span className="text-gray-400">/</span>
@@ -75,14 +75,14 @@ export default function Contact() {
 
               {/* Section Title */}
               <div>
-                <h2 className="text-3xl md:text-3xl font-black tracking-tight text-primary-black mb-8">
+                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-primary-black mb-8" style={{ letterSpacing: '0.05em' }}>
                   CONTACT NIXWOKER BESPOKE
                 </h2>
               </div>
 
               {/* Address Section */}
               <div>
-                <h3 className="text-lg md:text-xl font-black tracking-tight text-primary-black mb-6 uppercase">
+                <h3 className="text-2xl md:text-2xl font-black tracking-tight text-primary-black mb-6 uppercase" style={{ letterSpacing: '0.05em' }}>
                   Address
                 </h3>
                 <div className="space-y-1 text-primary-black/80 leading-relaxed font-medium">
@@ -114,7 +114,7 @@ export default function Contact() {
 
               {/* Opening Hours */}
               <div>
-                <h4 className="text-lg font-black tracking-tight text-primary-black mb-5 uppercase">
+                <h4 className="text-3xl font-black tracking-tight text-primary-black mb-5 uppercase" style={{ letterSpacing: '0.05em' }}>
                   Office Opening Hours
                 </h4>
                 <div className="space-y-2 text-primary-black/85 font-medium">
@@ -124,7 +124,7 @@ export default function Contact() {
 
               {/* Social Media / Follow Us */}
               <div>
-                <h4 className="text-lg font-black tracking-tight text-primary-black mb-5 uppercase">
+                <h4 className="text-2xl font-black tracking-tight text-primary-black mb-5 uppercase" style={{ letterSpacing: '0.05em' }}>
                   Follow Us
                 </h4>
                 <div className="flex items-center space-x-6">
@@ -163,7 +163,7 @@ export default function Contact() {
               <div className="mb-10">
                 <div className="flex items-start space-x-3 mb-4">
                   <Mail className="w-6 h-6 text-primary-black flex-shrink-0 mt-1" />
-                  <h3 className="text-2xl md:text-3xl font-black tracking-tight text-primary-black">
+                  <h3 className="text-3xl md:text-4xl font-black tracking-tight text-primary-black" style={{ letterSpacing: '0.05em' }}>
                     EMAIL US A QUESTION
                   </h3>
                 </div>

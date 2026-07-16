@@ -87,7 +87,7 @@ export default function CustomProcess() {
               }}
             >
               {/* Faded Dark Overlay for text readability */}
-              <div className="absolute inset-0 bg-black/60 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-black/75 pointer-events-none"></div>
 
               {/* Content - positioned relative to overlay */}
               <div className="relative z-10">
@@ -100,7 +100,7 @@ export default function CustomProcess() {
 
                 {/* Title and Description */}
                 <div>
-                  <h3 className="text-lg md:text-xl font-black text-white mb-3 uppercase tracking-wide">
+                  <h3 className="text-lg md:text-3xl font-black text-white mb-3 uppercase tracking-wide">
                     {step.title}
                   </h3>
                   <p className="text-white text-sm md:text-base leading-relaxed">

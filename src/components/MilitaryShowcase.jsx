@@ -60,7 +60,7 @@ export default function MilitaryShowcase() {
       <section className="py-2 md:py-2 bg-white">
         
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <p className="text-base md:text-lg leading-relaxed text-primary-black text-center font-sans">
+          <p className="text-xl md:text-2xl leading-relaxed text-primary-black text-center font-sans">
             Welcome to the home of the world-famous <span className="font-black">Nixwoker Bespoke Leather Co.</span> Based in India, we are the manufacturers of what many would call the best and toughest leather jackets on the World. On this website, you can view our <span className="font-black">Custom Made</span> extensive range of high-grade full Grain front quarter Bufflow and Cow, vegetable-tanned full grain leather for Wallets, goat skin jackets. We also offer military Grade Canvas jacket and Bag.
           </p>
         </div>

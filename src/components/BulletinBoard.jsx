@@ -48,7 +48,7 @@ export default function BulletinBoard() {
           {/* Title with side lines */}
           <div className="flex items-center justify-center gap-6 sm:gap-8 mb-12 md:mb-14">
             <div className="flex-1 h-1 bg-black"></div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-black tracking-widest whitespace-nowrap" style={{ letterSpacing: '0.05em' }}>
+            <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-widest whitespace-nowrap" style={{ letterSpacing: '0.05em' }}>
               BULLETIN BOARD
             </h2>
             <div className="flex-1 h-1 bg-black"></div>
@@ -97,7 +97,7 @@ export default function BulletinBoard() {
                   {/* Product Info */}
                   <div className="p-4 sm:p-5 flex-grow flex flex-col justify-between">
                     <div>
-                      <h3 className="text-lg sm:text-lg text-gray-800 mb-2 line-clamp-2 group-hover:text-black transition-colors leading-snug">
+                      <h3 className="text-2xl sm:text-xl text-gray-800 mb-2 line-clamp-2 group-hover:text-black transition-colors leading-snug">
                         {product.name}
                       </h3>
                     </div>

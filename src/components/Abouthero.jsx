@@ -7,7 +7,7 @@ export default function AboutHero() {
         {/* Header */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-12 md:mb-16">
           <div className="hidden md:flex-1 md:block h-1 bg-black"></div>
-          <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-black tracking-widest whitespace-normal sm:whitespace-nowrap leading-tight" style={{ letterSpacing: '0.05em' }}>
+          <h2 className="text-4xl sm:text-3xl md:text-3xl lg:text-5xl font-black tracking-widest whitespace-normal sm:whitespace-nowrap leading-tight" style={{ letterSpacing: '0.05em' }}>
               HANDMADE LEATHER JACKETS BY NIXWOKER BESPOKE
             </h2>
           <div className="hidden md:flex-1 md:block h-1 bg-black"></div>

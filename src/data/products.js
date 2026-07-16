@@ -8,17 +8,17 @@ export const products = [
     name: 'Jacket (Made to Order)',
     category: 'jackets',
     image: p0Image,
-    price: '£930.00',
-    description: 'Classic military-inspired bomber with premium full grain leather. Quilted lining, ribbed cuffs, and that relaxed heritage fit. Modern comfort meets vintage aesthetics.',
-    leatherType: ['Buffalo Leather', 'Goat Leather'],
-    colors: ['Black', 'Cognac', 'Olive'],
+    price: '$350.00',
+    description: 'Vintage and Classic Military -Inspired Bomber With Premium Top Grain Cow Leather. Furr Lining Ribbed Cuff , Sherline Detachable Coller and Relaxed Heritage Fit Modern Comfort Meets Vintage Aesthetic, 8 no.Ykk Brass  Zipper.',
+    leatherType: ['Buffalo Leather', 'Cow Leather'],
+    colors: ['Black', 'Brown'],
     features: [
-      'Quilted lining',
-      'Knit ribbed cuffs',
-      'Two-way front zipper',
-      'Interior patch pocket',
-      'Soft hand feel',
-      'Vintage wash option'
+      'Furr Lining',
+      'Knit Ribbed Cuffs',
+      'One Way Front Zipper',
+      'Interior Both Side Pockets ',
+      'Thickness Of Leather 1.2mm',
+      'Ykk 8 Number Brass Zipper'
     ]
   },
   {

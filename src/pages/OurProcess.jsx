@@ -4,7 +4,7 @@ import bg2 from '../assets/process/process2.jpg';
 import bg3 from '../assets/process/process3.jpg';
 import bg4 from '../assets/process/process4.jpg';
 import bg5 from '../assets/process/process5.jpg';
-import bg6 from '../assets/process/process6.jpg';
+import bg6 from '../assets/process/process6.jpeg';
 import bg7 from '../assets/process/process7.jpg';
 
 export default function OurProcess() {
@@ -19,11 +19,25 @@ export default function OurProcess() {
       {/* Hero Section */}
       <section className="bg-primary-black h-[110px] md:h-[220px] flex items-center justify-center">
         <div className="text-center px-4">
-          <h1 className="text-3xl md:text-4xl font-extrabold uppercase tracking-wider text-white">
+          <h1 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wider text-white">
             OUR PROCESS
           </h1>
         </div>
       </section>
+
+      {/* ===== BREADCRUMB NAVIGATION ===== */}
+      <div className="bg-primary-white border-b border-gray-200 px-4 md:px-8 py-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center space-x-2 text-sm md:text-base">
+            <a href="/" className="text-primary-black hover:text-black transition-colors font-medium">
+              Home
+            </a>
+            <span className="text-gray-400">/</span>
+            <span className="text-primary-black font-semibold">Our Process</span>
+          </div>
+        </div>
+      </div>
+
 
       {/* Introduction */}
       <section className="bg-white pt-8 pb-12 md:pt-12 md:pb-16">
@@ -46,7 +60,7 @@ export default function OurProcess() {
           <div className="mb-16 md:mb-24 py-8 md:py-12">
             <div className="flex items-center justify-center mb-8 md:mb-12">
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
-              <h2 className="text-2xl md:text-3xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">BEFORE ORDERING</h2>
+              <h2 className="text-4xl md:text-5xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">BEFORE ORDERING</h2>
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
             </div>
             
@@ -62,25 +76,25 @@ export default function OurProcess() {
               <div className="md:col-span-7">
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-lg md:text-lg font-bold text-black mb-2">Understanding Your Purchase</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">Understanding Your Purchase</h3>
                     <p className="text-base md:text-lg text-black font-semibold leading-relaxed">
                       We understand that buying your own Nixwoker jacket (especially your first) is a considered purchase, especially with so many choices to make. Which style should you choose? Which leather will work best? How do you get the right fit?
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-lg font-bold text-black mb-2">Visit Our Showroom</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">Visit Our Showroom</h3>
                     <p className="text-base md:text-lg text-black font-semibold leading-relaxed">
                       If you're able to make the journey, we'd be delighted to book you in for an appointment to visit our factory/showroom. That way, we can have a chat about your options and take your measurements in person, plus you can see and try on many examples of our styles and leathers in the flesh.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-lg font-bold text-black mb-2">Online Experience</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">Online Experience</h3>
                     <p className="text-base md:text-lg text-black font-semibold leading-relaxed">
                       While this is the ideal way to make your selections, we understand that this journey is not possible for many of customers who are further afield, so we've made sure the online Nixwoker experience is as close to being here as possible. We have placed as much information as we can on our website (both within the product listings and within the personalisation pages that follow), to inform you about our styles and materials and let you know how to provide us with accurate measurements.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-lg font-bold text-black mb-2">Expert Guidance</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">Expert Guidance</h3>
                     <p className="text-base md:text-lg text-black font-semibold leading-relaxed">
                       If you can't find the information you're looking for on our website or you are having trouble deciding, our experienced and friendly customer service team are always on hand to help in any way we can. We can send leather samples and photos of jackets/materials and use the knowledge and experience we've built over decades to guide you through each decision and advise you what we think will work best until you're happy with what you've ordered. Over the years we've helped thousands of customers create their dream jacket, so please don't hesitate to get in touch - it's our favourite part of the job!
                     </p>
@@ -94,7 +108,7 @@ export default function OurProcess() {
           <div className="mb-16 md:mb-24 py-8 md:py-12">
             <div className="flex items-center justify-center mb-8 md:mb-12">
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
-              <h2 className="text-2xl md:text-3xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">ORDERING YOUR JACKET</h2>
+              <h2 className="text-4xl md:text-5xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">ORDERING YOUR JACKET</h2>
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
             </div>
 
@@ -103,25 +117,25 @@ export default function OurProcess() {
               <div className="md:col-span-6">
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-lg md:text-lg font-bold text-black mb-2">Getting Started</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">Getting Started</h3>
                     <p className="text-base md:text-lg text-black font-semibold leading-relaxed">
                       The best way to order a jacket from Nixwoker is via our whatsapp – we've done lot of work to provide you with all the information you'll need to make your decision, but if you need any help, our team is on hand via whatsapp/phone to assist you.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-lg font-bold text-black mb-2">Choose Your Style</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">Choose Your Style</h3>
                     <p className="text-base md:text-lg text-black font-semibold leading-relaxed">
                       The first decision to make is which style you'd like from our wide range of early 20th century designs in our Made to Order and Military departments. We have over 100 to choose from, but you can easily dial in on the type of jacket you're looking for by using the product filters on the left-hand side of the screen. You can find a summary of each jacket's features and a wider contextual description within the jacket listings. Please note: the jackets pictured in each listing are just examples – you will be able to choose your own leather options etc later in the process.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-lg font-bold text-black mb-2">Select Your Size</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">Select Your Size</h3>
                     <p className="text-base md:text-lg text-black font-semibold leading-relaxed">
                       Once you have chosen a style, you can select which size you want within the product listing. This may not always be the size you are used to ordering depending the style you've chosen, but there is a sizing information summary within the product listing as well as further information on sizing available in our FAQ section to help guide you. Don't worry, our team of sizing experts are also on hand to assist and will check over the measurements you provide later in the process against your size and let you know if there any issues.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-lg font-bold text-black mb-2">Personalization</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">Personalization</h3>
                     <p className="text-base md:text-lg text-black font-semibold leading-relaxed">
                       Once you have ordered your style and size, you will be taken through to the personalisation pages to select your leather, lining, hardware and extra options (such as inside pockets). We have a wide selection of options in each category and provide pictures and information on each to assist you in picking the options that are right for the jacket you're creating. If you're still unsure about your selections at this point – don't worry! We'll check over your order and then re-confirm all your selections later in the process before going into production. We won't put your jacket into production until you're sure about your selections.
                     </p>
@@ -142,7 +156,7 @@ export default function OurProcess() {
           <div className="mb-16 md:mb-24 py-8 md:py-12">
             <div className="flex items-center justify-center mb-8 md:mb-12">
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
-              <h2 className="text-2xl md:text-3xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">PRE-PRODUCTION</h2>
+              <h2 className="text-4xl md:text-5xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">PRE-PRODUCTION</h2>
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
             </div>
 
@@ -173,7 +187,7 @@ export default function OurProcess() {
           <div className="mb-16 md:mb-24 py-8 md:py-12">
             <div className="flex items-center justify-center mb-8 md:mb-12">
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
-              <h2 className="text-2xl md:text-3xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">CUTTING</h2>
+              <h2 className="text-4xl md:text-5xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">CUTTING</h2>
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
             </div>
 
@@ -204,7 +218,7 @@ export default function OurProcess() {
           <div className="mb-16 md:mb-24 py-8 md:py-12">
             <div className="flex items-center justify-center mb-8 md:mb-12">
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
-              <h2 className="text-2xl md:text-3xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">MACHINING</h2>
+              <h2 className="text-4xl md:text-5xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">MACHINING</h2>
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
             </div>
 
@@ -235,7 +249,7 @@ export default function OurProcess() {
           <div className="mb-16 md:mb-24 py-8 md:py-12">
             <div className="flex items-center justify-center mb-8 md:mb-12">
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
-              <h2 className="text-2xl md:text-3xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">QUALITY CHECK</h2>
+              <h2 className="text-4xl md:text-5xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">QUALITY CHECK</h2>
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
             </div>
 
@@ -262,7 +276,7 @@ export default function OurProcess() {
           <div className="mb-16 md:mb-24 py-8 md:py-12">
             <div className="flex items-center justify-center mb-8 md:mb-12">
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
-              <h2 className="text-2xl md:text-3xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">YOUR JACKET IS READY FOR DISPATCH!</h2>
+              <h2 className="text-2xl md:text-5xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">YOUR JACKET IS READY FOR DISPATCH!</h2>
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
             </div>
 
@@ -278,13 +292,13 @@ export default function OurProcess() {
               <div className="md:col-span-7">
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-lg md:text-lg font-bold text-black mb-2">Ready for Dispatch</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">Ready for Dispatch</h3>
                     <p className="text-base md:text-lg text-black font-semibold leading-relaxed">
                       We will contact you as soon as your jacket has left the factory to let you know that your jacket is ready for dispatch and request any remaining balance. Once this has been paid, a member of our dispatch team will carefully pack your jacket and it will be en-route to you via courier within a day! Our selected courier will contact you to let you know a delivery time.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-lg font-bold text-black mb-2">A Jacket for Life</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">A Jacket for Life</h3>
                     <p className="text-base md:text-lg text-black font-semibold leading-relaxed">
                       Then, all you need to do is sit tight and wait for your package to arrive! The wait is nearly over — soon, you'll be opening a box to get the first glimpse of your very own Nixwoker jacket. You'll get to enjoy that unmatchable experience of trying it on and seeing yourself in your dream jacket for the very first time in the mirror. And as amazing as it looks new, this is just the beginning of a life-long journey with your Nixwoker where it looks better with every wear as the leather breaks in and starts to patina.
                     </p>
@@ -298,7 +312,7 @@ export default function OurProcess() {
           <div className="p-6 md:p-12">
             <div className="flex items-center justify-center mb-8 md:mb-12">
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
-              <h2 className="text-2xl md:text-3xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">OUR GUARANTEE:</h2>
+              <h2 className="text-4xl md:text-5xl font-black tracking-wider px-6 md:px-8 whitespace-nowrap">OUR GUARANTEE:</h2>
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
             </div>
 

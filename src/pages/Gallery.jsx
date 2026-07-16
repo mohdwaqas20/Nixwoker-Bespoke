@@ -31,21 +31,34 @@ export default function Gallery() {
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <div className="bg-black text-white py-16 md:py-24 px-4 md:px-8 text-center">
-        <h1 className="text-4xl md:text-3xl font-bold tracking-wide">
+      <div className="bg-black text-white py-16 md:py-24 px-4 md:px-8 text-center" data-gallery-hero>
+        <h1 className="text-4xl md:text-5xl font-bold tracking-wide">
           LEATHER JACKET GALLERY
         </h1>
+      </div>
+
+      {/* ===== BREADCRUMB NAVIGATION ===== */}
+      <div className="bg-primary-white border-b border-gray-200 px-4 md:px-8 py-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center space-x-2 text-sm md:text-base">
+            <a href="/" className="text-primary-black hover:text-black transition-colors font-medium">
+              Home
+            </a>
+            <span className="text-gray-400">/</span>
+            <span className="text-primary-black font-semibold">Gallery</span>
+          </div>
+        </div>
       </div>
 
       {/* Gallery Content */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
         {/* Section Title */}
         <div className="flex items-center justify-center mb-12 md:mb-16">
-          <div className="flex-1 h-0.5 bg-neutral-900"></div>
-          <h2 className="px-6 text-3xl md:text-4xl font-bold text-neutral-900 text-center flex-shrink-0">
+          <div className="flex-1 h-1 bg-neutral-900"></div>
+          <h2 className="px-6 text-4xl md:text-5xl font-bold text-neutral-900 text-center flex-shrink-0">
             NIXWOKER BESPOKE CUSTOMER GALLERY
           </h2>
-          <div className="flex-1 h-0.5 bg-neutral-900"></div>
+          <div className="flex-1 h-1 bg-neutral-900"></div>
         </div>
 
         {/* Description */}
@@ -73,7 +86,7 @@ export default function Gallery() {
           <p className="text-neutral-700 text-base md:text-lg">
             If you'd like to be featured on this page, please email{' '}
             <a
-              href="mailto:stock@aeroleatherclothing.com"
+              href="mailto:7oceansimpexinternational@gmail.com"
               className="font-semibold text-neutral-900 hover:text-neutral-600 transition-colors underline"
             >
               7oceansimpexinternational@gmail.com
