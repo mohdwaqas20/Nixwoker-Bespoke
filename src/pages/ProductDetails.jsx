@@ -36,19 +36,19 @@ export default function ProductDetails() {
   return (
     <div>
       {/* Breadcrumb */}
-      <div className="bg-cream border-b border-primary-black/10">
+      <div className="bg-white border-b border-primary-black/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-6">
           <div className="flex items-center gap-4 text-sm">
             <button
               onClick={() => navigate('/')}
-              className="text-leather-brown hover:text-primary-black transition-colors"
+              className="text-black hover:text-primary-black transition-colors"
             >
               Home
             </button>
             <span className="text-primary-black/40">/</span>
             <button
               onClick={() => navigate(`/${product.category}`)}
-              className="text-leather-brown hover:text-primary-black transition-colors capitalize"
+              className="text-black hover:text-primary-black transition-colors capitalize"
             >
               {product.category}
             </button>
@@ -65,7 +65,7 @@ export default function ProductDetails() {
             {/* Image */}
             <div className="animate-fade-in-left">
               <div className="sticky top-24">
-                <div className="relative aspect-[3/4] bg-cream overflow-hidden">
+                <div className="relative aspect-[3/4] bg-white overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}
@@ -78,9 +78,9 @@ export default function ProductDetails() {
             {/* Details */}
             <div className="animate-fade-in-right">
               <div className="mb-6">
-                <p className="eyebrow mb-4">{product.category}</p>
+                <p className="eyebrow text-primary-black mb-4">{product.category}</p>
                 <h1 className="text-primary-black mb-4">{product.name}</h1>
-                <p className="text-leather-brown font-serif text-2xl font-semibold">
+                <p className="text-leather-black font-serif text-2xl font-semibold">
                   {product.price}
                 </p>
               </div>
@@ -91,7 +91,7 @@ export default function ProductDetails() {
 
               {/* Leather Types */}
               <div className="mb-8 pb-8 border-b border-primary-black/10">
-                <h4 className="text-dark-tan font-semibold mb-4">Available Leather Types</h4>
+                <h4 className="text-black font-semibold mb-4">Available Leather Types</h4>
                 <div className="flex flex-wrap gap-3">
                   {product.leatherType?.map((leather, index) => (
                     <span
@@ -106,7 +106,7 @@ export default function ProductDetails() {
 
               {/* Colors */}
               <div className="mb-8 pb-8 border-b border-primary-black/10">
-                <h4 className="text-dark-tan font-semibold mb-4">Available Colors</h4>
+                <h4 className="text-black font-semibold mb-4">Available Colors</h4>
                 <div className="flex flex-wrap gap-3">
                   {product.colors?.map((color, index) => (
                     <span
@@ -121,11 +121,11 @@ export default function ProductDetails() {
 
               {/* Features */}
               <div className="mb-8 pb-8 border-b border-primary-black/10">
-                <h4 className="text-dark-tan font-semibold mb-4">Key Features</h4>
+                <h4 className="text-black font-semibold mb-4">Key Features</h4>
                 <ul className="space-y-3">
                   {product.features?.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-leather-brown rounded-full mt-2 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></span>
                       <span className="text-primary-black/70">{feature}</span>
                     </li>
                   ))}
@@ -151,9 +151,9 @@ export default function ProductDetails() {
               </div>
 
               {/* Info Box */}
-              <div className="p-6 bg-cream border border-primary-black/10">
+              <div className="p-6 bg-white border border-primary-black/10">
                 <p className="text-sm text-primary-black/70">
-                  <span className="font-semibold text-dark-tan">Custom Made Process:</span> Each jacket is handcrafted to order. Typical production time is 4 weeks. 50% advance payment required to begin production.
+                  <span className="font-semibold text-black">Custom Made Process:</span> Each jacket is handcrafted to order. Typical production time is 4 weeks. 50% advance payment required to begin production.
                 </p>
               </div>
             </div>
@@ -216,7 +216,7 @@ export default function ProductDetails() {
         </div>
       </section>*/}
 
-      {/* Customization Process */}
+      {/* Customization Process 
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
@@ -289,19 +289,19 @@ export default function ProductDetails() {
           </div>
         </div>
       </section>
-
+*/}
       {/* Final CTA */}
-      <section className="section-padding bg-primary-black text-primary-white">
+      <section className="section-padding bg-white text-primary-white">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
-          <h2 className="text-primary-white mb-8">Ready to Order Your {product.name}?</h2>
-          <p className="text-lg text-primary-white/90 mb-12">
+          <h2 className="text-primary-black mb-8">Ready to Order Your {product.name}?</h2>
+          <p className="text-lg text-primary-black/90 mb-12">
             Connect with us to discuss customization, measurements, and pricing.
           </p>
           <a
             href={`https://wa.me/9179099656?text=${encodeURIComponent(`Hello, I'm interested in the ${product.name}.`)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-primary-white text-primary-black font-semibold text-lg tracking-wide hover:bg-cream transition-all duration-300 inline-block"
+            className="px-8 py-4 bg-primary-black text-primary-white font-semibold text-lg tracking-wide hover:bg-white hover:text-primary-black border border-primary-black transition-all duration-300 inline-block"
           >
             Start Your Order
           </a>

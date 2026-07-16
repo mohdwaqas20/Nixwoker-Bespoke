@@ -17,11 +17,24 @@ export default function About() {
       {/* Hero Section */}
       <section className="bg-black h-[110px] md:h-[220px] flex items-center justify-center border-b border-primary-black/10">
         <div className="text-center px-4">
-          <h1 className="text-5xl md:text-4xl font-extrabold uppercase tracking-wider text-primary-white">
+          <h1 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wider text-primary-white">
             ABOUT US
           </h1>
         </div>
       </section>
+
+      {/* ===== BREADCRUMB NAVIGATION ===== */}
+      <div className="bg-primary-white border-b border-gray-200 px-4 md:px-8 py-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center space-x-2 text-sm md:text-base">
+            <a href="/" className="text-primary-black hover:text-black transition-colors font-medium">
+              Home
+            </a>
+            <span className="text-gray-400">/</span>
+            <span className="text-primary-black font-semibold">About Us</span>
+          </div>
+        </div>
+      </div>
 
       {/* Our Story Section */}
       <section className="bg-white pt-6 pb-20 md:pt-8 md:pb-24">
@@ -107,7 +120,7 @@ export default function About() {
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center justify-center gap-6 mb-12">
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
-              <h2 className="text-4xl md:text-3xl font-extrabold uppercase tracking-wider text-primary-black whitespace-nowrap">
+              <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wider text-primary-black whitespace-nowrap">
                 Craftsmanship
               </h2>
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
@@ -121,21 +134,21 @@ export default function About() {
 
                   <div className="space-y-6 mt-8">
                     <div>
-                      <h3 className="text-xl font-bold text-primary-black mb-3">Hand-Cut Precision</h3>
+                      <h3 className="text-3xl font-bold text-primary-black mb-3">Hand-Cut Precision</h3>
                       <p>
                         Every product begins with the careful selection of the finest full-grain leather. Our artisans hand-cut each pattern with exceptional accuracy, ensuring the natural beauty, strength, and character of the leather are preserved while minimizing waste.
                       </p>
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-bold text-primary-black mb-3">Hand-Stitched Excellence</h3>
+                      <h3 className="text-3xl font-bold text-primary-black mb-3">Hand-Stitched Excellence</h3>
                       <p>
                         Using traditional hand-stitching techniques, every seam is crafted with precision and durability. This meticulous process not only enhances the product's strength but also gives each piece a distinctive artisanal character that cannot be replicated by mass production.
                       </p>
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-bold text-primary-black mb-3">Hand-Finished Perfection</h3>
+                      <h3 className="text-3xl font-bold text-primary-black mb-3">Hand-Finished Perfection</h3>
                       <p>
                         Each creation is individually hand-finished through edge burnishing, polishing, conditioning, and detailed quality inspection. The result is a refined finish, exceptional durability, and a luxurious feel that improves beautifully with age.
                       </p>
@@ -150,7 +163,7 @@ export default function About() {
               </div>
 
               <div className="bg-primary-black/5 border border-primary-black/20 p-8 my-8">
-                <h3 className="text-xl font-bold text-primary-black mb-4">Bespoke (Made-to-Order)</h3>
+                <h3 className="text-3xl font-bold text-primary-black mb-4">Bespoke (Made-to-Order)</h3>
                 <p className="text-primary-black/90">
                   Every Nixwoker creation is made exclusively for its owner. Our bespoke process allows customers to personalize every detail—from leather selection and color to dimensions, hardware, monograms, and finishing touches. Once your preferences are finalized, our master artisans begin crafting your piece by hand, ensuring that every product is one of a kind and tailored to your exact vision.
                 </p>
@@ -172,26 +185,26 @@ export default function About() {
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center justify-center gap-6 mb-12">
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
-              <h2 className="text-4xl md:text-3xl font-extrabold uppercase tracking-wider text-primary-black whitespace-nowrap">
+              <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wider text-primary-black whitespace-nowrap">
                 Values
               </h2>
               <div className="flex-1 h-1 bg-black hidden md:block"></div>
             </div>
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-bold text-primary-black mb-4">Authenticity</h3>
+                <h3 className="text-3xl font-bold text-primary-black mb-4">Authenticity</h3>
                 <p className="text-lg text-primary-black/90 leading-relaxed">
                   We believe in creating genuine leather goods that celebrate traditional craftsmanship, premium materials, and honest design. Every piece reflects our commitment to originality and excellence.
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-primary-black mb-4">Integrity</h3>
+                <h3 className="text-3xl font-bold text-primary-black mb-4">Integrity</h3>
                 <p className="text-lg text-primary-black/90 leading-relaxed">
                   Integrity is the foundation of everything we do. From responsibly sourcing fine leather to maintaining transparent practices and uncompromising quality, we strive to earn and uphold our customers' trust.
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-primary-black mb-4">Craftsmanship</h3>
+                <h3 className="text-3xl font-bold text-primary-black mb-4">Craftsmanship</h3>
                 <p className="text-lg text-primary-black/90 leading-relaxed">
                   Our skilled artisans bring years of expertise to every creation. Through meticulous hand cutting, hand stitching, and hand finishing, each product is crafted with precision, passion, and exceptional attention to detail.
                 </p>
@@ -202,7 +215,7 @@ export default function About() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-primary-black mb-4">Durability</h3>
+                <h3 className="text-3xl font-bold text-primary-black mb-4">Durability</h3>
                 <p className="text-lg text-primary-black/90 leading-relaxed">
                   We design products to stand the test of time. By combining premium materials with expert craftsmanship, every piece is made to deliver lasting performance and become more beautiful with age.
                 </p>
@@ -223,7 +236,7 @@ export default function About() {
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center justify-center gap-6 mb-12">
               <div className="flex-1 h-1 bg-primary-black"></div>
-              <h2 className="text-4xl md:text-3xl font-extrabold uppercase tracking-wider text-primary-black whitespace-nowrap">
+              <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wider text-primary-black whitespace-nowrap">
                 Why Choose Nixwoker?
               </h2>
               <div className="flex-1 h-1 bg-primary-black"></div>
@@ -235,35 +248,35 @@ export default function About() {
 
               <div className="space-y-6 mt-8">
                 <div>
-                  <h3 className="text-xl font-bold text-primary-black mb-3">No Mass Production</h3>
+                  <h3 className="text-3xl font-bold text-primary-black mb-3">No Mass Production</h3>
                   <p>
                     We believe that true luxury cannot be mass-produced. Every Nixwoker creation is handcrafted in limited quantities or made to order, ensuring each piece receives the time, precision, and individual attention it deserves. Our focus is on quality, not volume.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-bold text-primary-black mb-3">Premium Materials</h3>
+                  <h3 className="text-3xl font-bold text-primary-black mb-3">Premium Materials</h3>
                   <p>
                     Only the finest full-grain and top-quality genuine leathers are selected for our collections. We carefully source premium materials known for their natural beauty, strength, and rich character. Every leather hide is chosen for its unique texture and ability to age gracefully over time.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-bold text-primary-black mb-3">Handmade Quality</h3>
+                  <h3 className="text-3xl font-bold text-primary-black mb-3">Handmade Quality</h3>
                   <p>
                     Every product is meticulously handcrafted by skilled artisans using traditional techniques, including hand cutting, hand stitching, edge finishing, and detailed quality inspection. This hands-on approach ensures superior durability, flawless construction, and a level of craftsmanship that machine production simply cannot match.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-bold text-primary-black mb-3">The Lifetime Character of Leather</h3>
+                  <h3 className="text-3xl font-bold text-primary-black mb-3">The Lifetime Character of Leather</h3>
                   <p>
                     Premium leather is a living material that develops a rich patina with time and use. Rather than wearing out, it becomes more beautiful with age, telling the unique story of its owner. Each Nixwoker piece evolves over the years, making it truly personal and one of a kind.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-bold text-primary-black mb-3">International Luxury Standards</h3>
+                  <h3 className="text-3xl font-bold text-primary-black mb-3">International Luxury Standards</h3>
                   <p>
                     Our commitment to excellence is reflected in every detail. From material selection and precision craftsmanship to finishing and quality control, every Nixwoker product is created to meet the expectations of the world's finest luxury leather brands. We combine traditional artistry with modern refinement to deliver products of exceptional quality and timeless appeal.
                   </p>
@@ -271,7 +284,7 @@ export default function About() {
               </div>
 
               <div className="bg-primary-black/5 border border-primary-black/20 p-8 my-8">
-                <h3 className="text-xl font-bold text-primary-black mb-4">An Investment in Timeless Luxury</h3>
+                <h3 className="text-3xl font-bold text-primary-black mb-4">An Investment in Timeless Luxury</h3>
                 <p className="text-primary-black/90">
                   Choosing Nixwoker means investing in more than a leather accessory. It means owning a handcrafted masterpiece that represents authenticity, enduring style, unmatched craftsmanship, and lasting value. Every piece is created to accompany you for years, becoming more distinctive and meaningful with every journey.
                 </p>
@@ -320,7 +333,7 @@ export default function About() {
               </div>
 
               <div className="bg-primary-black/5 border border-primary-black/20 p-8 my-8">
-                <h3 className="text-2xl font-bold text-primary-black mb-6">Our Values</h3>
+                <h3 className="text-3xl font-bold text-primary-black mb-6">Our Values</h3>
                 <div className="grid md:grid-cols-2 gap-4 text-primary-black/90">
                   <p className="font-semibold">Timeless Design</p>
                   <p className="font-semibold">Bespoke Craftsmanship</p>

@@ -23,22 +23,22 @@ export default function Hero() {
     },
     {
       image: bg2,
-      title: "CELEBRATING 40 YEARS OF OUR HIGHWAYMAN",
+      title: "Built for man of presence...",
       statement: "Get your own piece of leather jacket history"
     },
     {
       image: bg3,
-      title: "TIMELESS & UNIQUE HAND CRAFTED CLOTHING FROM AERO",
+      title: "TIMELESS & UNIQUE HAND CRAFTED CLOTHING FROM NIXWOKER",
       statement: "Premium quality meets exceptional craftsmanship"
     },
     {
       image: bg4,
-      title: "EXPLORE OUR FAMOUS MILITARY RANGE...",
+      title: "Explore our Military Grade Canvas jacket...",
       statement: "Quality, authentic recreations of the finest 20th century flight jackets!"
     },
     {
       image: bg5,
-      title: "CUSTOM CLASSICS FROM AERO LEATHERS",
+      title: "Custom Jackets From Nixwoker Leathers",
       statement: "Made to Your Specifications"
     }
   ];
