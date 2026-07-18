@@ -71,6 +71,7 @@ export default function ProductDetails() {
                     alt={product.name}
                     className="w-full h-full object-cover"
                   />
+                  
                 </div>
               </div>
             </div>
