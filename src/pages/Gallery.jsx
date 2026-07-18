@@ -1,7 +1,7 @@
-import bg1 from '../assets/bg1.jpeg';
-import bg2 from '../assets/bg2.jpeg';
-import bg3 from '../assets/bg3.jpeg';
-import bg4 from '../assets/bg4.jpeg';
+import bg1 from '../assets/product/p0.jpeg';
+import bg2 from '../assets/product/p1.jpeg';
+import bg3 from '../assets/product/p2.jpeg';
+import bg4 from '../assets/product/p3.jpeg';
 
 export default function Gallery() {
   const galleryImages = [
