@@ -14,10 +14,10 @@ export default function BulletinBoard() {
 
   const bulletinProducts = {
     'ready-to-buy': [
-      { id: 'leather-jacket', name: 'Jacket (MADE TO ORDER)', price: '£930.00', image: productImages[0], badge: 'NEW' },
-      { id: 'military-jacket', name: 'Military Jacket (MADE TO ORDER)', price: '£1,100.00', image: productImages[1], badge: 'NEW' },
-      { id: 'military-bags', name: 'Military Bags (MADE TO ORDER)', price: '£690.00', image: productImages[2], badge: 'NEW' },
-      { id: 'leather-wallet', name: 'Leather Wallet (MADE TO ORDER)', price: '£400.00', image: productImages[3], badge: 'NEW' }
+      { id: 'leather-jacket', name: 'Jacket (MADE TO ORDER)', price: '$350.00', image: productImages[0], badge: 'NEW' },
+      { id: 'military-jacket', name: 'Military Jacket (MADE TO ORDER)', price: '$96.00', image: productImages[1], badge: 'NEW' },
+      { id: 'military-bags', name: 'Military Bags (MADE TO ORDER)', price: '$62.00', image: productImages[2], badge: 'NEW' },
+      { id: 'leather-wallet', name: 'Leather Wallet (MADE TO ORDER)', price: '$45.00', image: productImages[3], badge: 'NEW' }
     ],
     
   };

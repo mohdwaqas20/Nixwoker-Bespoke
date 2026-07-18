@@ -90,47 +90,53 @@ export default function ProductDetails() {
               </p>
 
               {/* Leather Types */}
-              <div className="mb-8 pb-8 border-b border-primary-black/10">
-                <h4 className="text-black font-semibold mb-4">Available Leather Types</h4>
-                <div className="flex flex-wrap gap-3">
-                  {product.leatherType?.map((leather, index) => (
-                    <span
-                      key={index}
-                      className="px-4 py-2 border border-primary-black/20 text-sm text-primary-black/70 hover:border-primary-black/50 transition-colors"
-                    >
-                      {leather}
-                    </span>
-                  ))}
+              {product.leatherType && product.leatherType.length > 0 && (
+                <div className="mb-8 pb-8 border-b border-primary-black/10">
+                  <h4 className="text-black font-semibold mb-4">Available Leather Types</h4>
+                  <div className="flex flex-wrap gap-3">
+                    {product.leatherType.map((leather, index) => (
+                      <span
+                        key={index}
+                        className="px-4 py-2 border border-primary-black/20 text-sm text-primary-black/70 hover:border-primary-black/50 transition-colors"
+                      >
+                        {leather}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
               {/* Colors */}
-              <div className="mb-8 pb-8 border-b border-primary-black/10">
-                <h4 className="text-black font-semibold mb-4">Available Colors</h4>
-                <div className="flex flex-wrap gap-3">
-                  {product.colors?.map((color, index) => (
-                    <span
-                      key={index}
-                      className="px-4 py-2 border border-primary-black/20 text-sm text-primary-black/70 hover:border-primary-black/50 transition-colors"
-                    >
-                      {color}
-                    </span>
-                  ))}
+              {product.colors && product.colors.length > 0 && (
+                <div className="mb-8 pb-8 border-b border-primary-black/10">
+                  <h4 className="text-black font-semibold mb-4">Available Colors</h4>
+                  <div className="flex flex-wrap gap-3">
+                    {product.colors.map((color, index) => (
+                      <span
+                        key={index}
+                        className="px-4 py-2 border border-primary-black/20 text-sm text-primary-black/70 hover:border-primary-black/50 transition-colors"
+                      >
+                        {color}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
               {/* Features */}
-              <div className="mb-8 pb-8 border-b border-primary-black/10">
-                <h4 className="text-black font-semibold mb-4">Key Features</h4>
-                <ul className="space-y-3">
-                  {product.features?.map((feature, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></span>
-                      <span className="text-primary-black/70">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {product.features && product.features.length > 0 && (
+                <div className="mb-8 pb-8 border-b border-primary-black/10">
+                  <h4 className="text-black font-semibold mb-4">Key Features</h4>
+                  <ul className="space-y-3">
+                    {product.features.map((feature, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></span>
+                        <span className="text-primary-black/70">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               {/* CTA Buttons */}
               <div className="space-y-4 mb-8">
@@ -153,7 +159,7 @@ export default function ProductDetails() {
               {/* Info Box */}
               <div className="p-6 bg-white border border-primary-black/10">
                 <p className="text-sm text-primary-black/70">
-                  <span className="font-semibold text-black">Custom Made Process:</span> Each jacket is handcrafted to order. Typical production time is 4 weeks. 50% advance payment required to begin production.
+                  <span className="font-semibold text-black">Custom Made Process:</span> Each product is handcrafted to order. Typical production time is 4 weeks. 50% advance payment required to begin production.
                 </p>
               </div>
             </div>
@@ -161,135 +167,6 @@ export default function ProductDetails() {
         </div>
       </section>
 
-      {/* Related Products 
-      <section className="section-padding bg-cream">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="mb-12">
-            <h2 className="mb-6">Related Products</h2>
-            <p className="text-primary-black/70">
-              Explore more from our collection.
-            </p>
-          </div>
-
-          <div className="grid-cols-product">
-            {products
-              .filter(p => p.category === product.category && p.id !== product.id)
-              .slice(0, 3)
-              .map((relatedProduct, index) => (
-                <div
-                  key={relatedProduct.id}
-                  className="animate-fade-in-up"
-                  style={{
-                    animationDelay: `${index * 0.1}s`
-                  }}
-                >
-                  <div className="card-premium card-hover group cursor-pointer h-full flex flex-col hover:shadow-2xl transition-all duration-500">
-                    <div className="relative overflow-hidden aspect-[3/4] bg-cream">
-                      <img
-                        src={relatedProduct.image}
-                        alt={relatedProduct.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      />
-                    </div>
-                    <div className="p-6 md:p-8 flex flex-col flex-grow">
-                      <p className="eyebrow mb-3">{relatedProduct.category}</p>
-                      <h3 className="font-display text-lg md:text-xl font-bold text-primary-black mb-3">
-                        {relatedProduct.name}
-                      </h3>
-                      <p className="text-leather-brown font-serif text-lg mb-4">
-                        {relatedProduct.price}
-                      </p>
-                      <p className="text-sm text-primary-black/70 mb-6 flex-grow">
-                        {relatedProduct.description}
-                      </p>
-                      <a
-                        href={`/product/${relatedProduct.id}`}
-                        className="btn-ghost text-sm inline-block"
-                      >
-                        View Details →
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-          </div>
-        </div>
-      </section>*/}
-
-      {/* Customization Process 
-      <section className="section-padding">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="text-center mb-16">
-            <h2 className="mb-6">The Custom Process</h2>
-            <p className="text-lg text-primary-black/70">
-              How we bring your vision to life.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="card-premium p-10">
-              <div className="w-12 h-12 bg-leather-brown text-primary-white rounded-full flex items-center justify-center font-display font-bold mb-4 text-lg">
-                1
-              </div>
-              <h4 className="text-dark-tan font-semibold mb-3 text-lg">Share Your Vision</h4>
-              <p className="text-primary-black/70">
-                Send reference images or describe your ideal jacket. Discuss style, fit preferences, and any custom details.
-              </p>
-            </div>
-
-            <div className="card-premium p-8">
-              <div className="w-12 h-12 bg-leather-brown text-primary-white rounded-full flex items-center justify-center font-display font-bold mb-4 text-lg">
-                2
-              </div>
-              <h4 className="text-dark-tan font-semibold mb-3 text-lg">Measurements</h4>
-              <p className="text-primary-black/70">
-                We send a detailed measurement guide. Work with a tailor to ensure precise fit for your body.
-              </p>
-            </div>
-
-            <div className="card-premium p-8">
-              <div className="w-12 h-12 bg-leather-brown text-primary-white rounded-full flex items-center justify-center font-display font-bold mb-4 text-lg">
-                3
-              </div>
-              <h4 className="text-dark-tan font-semibold mb-3 text-lg">Leather & Color</h4>
-              <p className="text-primary-black/70">
-                Choose from premium leather types (Buffalo, Cow, Goat, Vegetable-Tanned) and available colors.
-              </p>
-            </div>
-
-            <div className="card-premium p-8">
-              <div className="w-12 h-12 bg-leather-brown text-primary-white rounded-full flex items-center justify-center font-display font-bold mb-4 text-lg">
-                4
-              </div>
-              <h4 className="text-dark-tan font-semibold mb-3 text-lg">Production</h4>
-              <p className="text-primary-black/70">
-                Pay 50% advance. Your jacket is handcrafted to specs. Approximately 4 weeks of artisanal work.
-              </p>
-            </div>
-
-            <div className="card-premium p-8">
-              <div className="w-12 h-12 bg-leather-brown text-primary-white rounded-full flex items-center justify-center font-display font-bold mb-4 text-lg">
-                5
-              </div>
-              <h4 className="text-dark-tan font-semibold mb-3 text-lg">Final Payment</h4>
-              <p className="text-primary-black/70">
-                Pay remaining balance. We prepare your jacket for shipping with premium packaging.
-              </p>
-            </div>
-
-            <div className="card-premium p-8">
-              <div className="w-12 h-12 bg-leather-brown text-primary-white rounded-full flex items-center justify-center font-display font-bold mb-4 text-lg">
-                6
-              </div>
-              <h4 className="text-dark-tan font-semibold mb-3 text-lg">Delivery</h4>
-              <p className="text-primary-black/70">
-                Your handcrafted jacket arrives. Now begins its lifetime journey with you.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-*/}
       {/* Final CTA */}
       <section className="section-padding bg-white text-primary-white">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">

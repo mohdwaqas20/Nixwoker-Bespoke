@@ -1,10 +1,10 @@
 import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import bg1 from '../assets/main/main_bg1.jpg';
-import bg2 from '../assets/main/main_bg2.jpg';
+import bg2 from '../assets/main/main_bg2.jpeg';
 import bg3 from '../assets/main/main_bg3.jpg';
-import bg4 from '../assets/main/main_bg4.jpg';
-import bg5 from '../assets/main/main_bg5.jpg';
+import bg4 from '../assets/main/main_bg4.jpeg';
+import bg5 from '../assets/main/main_bg5.jpeg';
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -129,7 +129,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-no-repeat transition-all duration-700"
         style={{
           backgroundImage: `url(${slides[currentSlide].image})`,
-          backgroundPosition: 'center 19%',
+          backgroundPosition: 'center 50%',
         }}
       />
 

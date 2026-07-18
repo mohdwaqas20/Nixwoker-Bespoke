@@ -1,8 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useCallback } from 'react';
-import bg1 from '../assets/img1.webp';
-import bg2 from '../assets/img2.webp';
-import bg3 from '../assets/img3.webp';
+import bg1 from '../assets/img1.jpeg';
+import bg2 from '../assets/img2.jpeg';
+import bg3 from '../assets/img3.jpeg';
 
 export default function AeroInfo() {
   const navigate = useNavigate();

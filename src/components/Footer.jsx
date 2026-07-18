@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useCallback } from 'react';
-import { FaInstagram, FaFacebookF, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -47,6 +47,7 @@ export default function Footer() {
   }, [navigate]);
 
   const socials = [
+    { name: 'WhatsApp', url: 'https://wa.me/9179099656', icon: FaWhatsapp },
     { name: 'Instagram', url: 'https://www.instagram.com/nixwokerleatherco?igsh=MTZjczgxcmVjazh0cg==', icon: FaInstagram },
     { name: 'Facebook', url: 'https://www.facebook.com/share/1HTzAxBzau/', icon: FaFacebookF },
     { name: 'YouTube', url: 'https://youtube.com/@nixwokerbespokeleatherco', icon: FaYoutube }
@@ -198,7 +199,7 @@ export default function Footer() {
             
             {/* Follow Us - Desktop */}
             <div className="hidden lg:block mt-6">
-              <h4 className="text-lg font-semibold leading-6 text-white mb-3">Follow Us</h4>
+              <h4 className="text-lg font-semibold leading-6 text-white mb-3">Connect With Us</h4>
               <div className="flex gap-4">
                 {socials.map((social) => {
                   const IconComponent = social.icon;

@@ -2,6 +2,7 @@ import p0Image from '../assets/product/p0.jpeg';
 import p1Image from '../assets/product/p1.jpeg';
 import p2Image from '../assets/product/p2.jpeg';
 import p3Image from '../assets/product/p3.jpeg';
+
 export const products = [
   {
     id: 'leather-jacket',
@@ -22,60 +23,82 @@ export const products = [
     ]
   },
   {
-    id: 'military-jacket',
-    name: 'Military Jacket',
-    category: 'jackets',
-    image: p1Image,
-    price: '£1,100.00',
-    description: 'Inspired by vintage military specs. Structured shoulders, authentic hardware, and that authoritative heritage presence. For those who understand quality.',
-    leatherType: ['Buffalo Leather', 'Cow Leather', 'Vegetable-Tanned'],
-    colors: ['Black', 'Brown', 'Sage Green'],
-    features: [
-      'Structured shoulder design',
-      'Chest utility pockets',
-      'Brass hardware',
-      'Hand-stitched throughout',
-      'Vintage hardware patina',
-      'Built to last generations'
-    ]
-  },
-
-  {
-    id: 'military-bags',
-    name: 'Military Bags',
-    category: 'canvas',
-    image: p2Image,
-    price: '£690.00',
-    description: 'Heavy-duty military canvas with genuine leather trim. Vintage buckles, reinforced stitching, and that authentic heritage aesthetic. Built for adventure.',
-    leatherType: ['Buffalo Leather', 'Cow Leather'],
-    colors: ['Olive', 'Khaki', 'Navy'],
-    features: [
-      'Military-grade canvas',
-      'Leather trim',
-      'Brass buckles',
-      'Reinforced seams',
-      'Multiple pockets',
-      'Weather resistant'
-    ]
-  },
-  {
-    id: 'leather-wallet',
-    name: 'Leather Wallet',
-    category: 'wallets',
-    image: p3Image,
-    price: '£400.00',
-    description: 'Hand-stitched full grain leather wallet. Slim design with multiple card slots and a coin pocket. Built for daily use and a lifetime of patina.',
-    leatherType: ['Buffalo Leather', 'Vegetable-Tanned'],
-    colors: ['Black', 'Cognac', 'Dark Tan'],
-    features: [
-      'Hand-stitched throughout',
-      'Full grain leather',
-      'Card slots',
-      'Coin compartment',
-      'Money pocket',
-      'Develops character over time'
-    ]
-  },
+  id: 'military-jacket',
+  name: 'Military Grade Heavy Canvas Workwear Jacket',
+  category: 'jackets',
+  image: p1Image,
+  price: '$96.00',
+  description: 'Built for the harshest environments and inspired by classic military field gear. Engineered from heavy-duty military-grade waxed canvas with premium full-grain leather accents. Features a naturally water-resistant and wind-resistant finish that develops a rich patina over time, giving every jacket unique character that reflects authentic wear.',
+  materials: ['Military-Grade Waxed Canvas', 'Full-Grain Leather Collar', 'Full-Grain Leather Cuff Reinforcements', 'Corduroy Lining'],
+  waxTreatment: ['Beeswax', 'Almond Oil', 'Paraffin Wax'],
+  colors: ['Black', 'Tan', 'Olive', 'Brown'],
+  hardware: ['Genuine YKK Brass Zipper', 'Solid Brass Snap Buttons'],
+  features: [
+    'Heavy-duty military-grade waxed canvas construction',
+    'Naturally water-resistant and wind-resistant',
+    'Premium full-grain leather collar',
+    'Reinforced full-grain leather cuffs',
+    'Soft corduroy-lined collar',
+    'Genuine YKK solid brass zipper',
+    'Heavy-duty solid brass snap buttons',
+    'Develops distinctive vintage patina with age',
+    'Reinforced construction for high-wear areas',
+    'Suitable for outdoor adventures, workshop use, motorcycle riding, and everyday wear',
+    'Built to last generations'
+  ]
+},{
+  id: 'military-bags',
+  name: 'Military Grade Heavy Canvas Roll-Top Backpack',
+  category: 'canvas',
+  image: p2Image,
+  price: '$62.00',
+  description: 'Built for extreme conditions and inspired by classic military field gear. Heavy-duty military-grade waxed canvas with premium leather shoulder straps and reinforced full-grain leather trim. Features an expandable roll-top closure for versatile storage and superior weather protection. Develops a rich vintage patina over time.',
+  materials: ['Military-Grade Waxed Canvas', 'Top-Grain Crunch Leather Shoulder Straps', 'Full-Grain Leather Trim'],
+  waxTreatment: ['Beeswax', 'Almond Oil', 'Paraffin Wax'],
+  colors: ['Faded Black', 'Tobacco', 'Military Green'],
+  hardware: ['Genuine YKK Zipper', 'Heavy-Duty Steel Buckles', 'Premium Metal Hardware'],
+  features: [
+    'Heavy-duty military-grade waxed canvas construction',
+    'Naturally water-resistant, wind-resistant, and abrasion-resistant',
+    'Expandable roll-top closure for versatile storage',
+    'Superior protection against rain, dust, and elements',
+    'Premium top-grain crunch leather shoulder straps',
+    'Reinforced full-grain leather trim at high-stress areas',
+    'Genuine YKK zipper',
+    'Heavy-duty steel buckles and premium hardware',
+    'Develops beautiful vintage patina with age',
+    'Handcrafted precision engineering',
+    'Ideal for travel, outdoor adventures, commuting, and work',
+    'Built to last a lifetime'
+  ]
+},{
+  id: 'leather-wallet',
+  name: 'Calvin Buffalo Vegetable-Tanned Leather EDC Wallet & Card Holder',
+  category: 'wallets',
+  image: p3Image,
+  price: '$45.00',
+  description: 'A celebration of traditional craftsmanship and premium natural materials. Handcrafted from 100% buffalo vegetable-tanned leather using one of the oldest and most respected tanning methods. Features hand saddle stitching with premium waxed thread and develops a rich, unique patina with everyday use. Built to age beautifully and serve faithfully for decades.',
+  materials: ['100% Premium Buffalo Vegetable-Tanned Leather'],
+  tanningMethod: 'Traditional Vegetable Tanning with Natural Plant Extracts',
+  craftingTechnique: 'Hand Saddle Stitching with Premium Waxed Thread',
+  colors: ['Black', 'Cognac', 'Dark Tan', 'Natural'],
+  features: [
+    'Premium buffalo vegetable-tanned leather',
+    'Completely handcrafted by skilled artisans',
+    'Individually hand-dyed for unique finish',
+    'Durable hand saddle stitching (two-needle technique)',
+    'Stronger seams that remain secure if damaged',
+    'Develops rich and beautiful natural patina over time',
+    'Burnished and hand-finished edges',
+    'Slim EDC design for cards, cash, and essentials',
+    'Multiple card slots and storage compartments',
+    'Environmentally conscious natural tanning process',
+    'Strong, long-lasting construction for everyday use',
+    'Unique natural grain patterns—no two pieces identical',
+    'Gets better with age and use',
+    'Built to last a lifetime'
+  ]
+}
 ];
 
 export const categories = [

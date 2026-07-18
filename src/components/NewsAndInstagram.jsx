@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import bg1 from '../assets/bg1.jpeg';
-import bg2 from '../assets/bg2.jpeg';
-import bg3 from '../assets/bg3.jpeg';
-import bg4 from '../assets/bg4.jpeg';
+import bg1 from '../assets/INSTAGRAM/img2.jpeg';
+import bg2 from '../assets/INSTAGRAM/img1.jpeg';
+import bg3 from '../assets/INSTAGRAM/img3.jpeg';
+import bg4 from '../assets/INSTAGRAM/img4.jpeg';
 
 export default function NewsAndInstagram() {
   const [newsItems] = useState([

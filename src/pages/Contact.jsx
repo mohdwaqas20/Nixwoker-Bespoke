@@ -100,7 +100,7 @@ export default function Contact() {
                     className="flex items-center space-x-3 text-primary-black hover:text-leather-brown transition-colors font-bold text-base"
                   >
                     <Phone className="w-5 h-5 flex-shrink-0" />
-                    <span>+917999665228</span>
+                    <span>+91-9179099656</span>
                   </a>
                   <a
                     href="mailto:7oceansimpexinternational@gmail.com"
